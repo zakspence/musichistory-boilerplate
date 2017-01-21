@@ -4,7 +4,7 @@
 
 
 
-#header, #sidebar-wrapper, #main-display-wrapper {
+#header, #sidebar-wrapper, #song-display-wrapper {
 	padding: 1.5em auto;
 	margin: 10px;
 	border-radius: 5px;
@@ -82,13 +82,14 @@ h4 {
 
 
 
-#main-display-wrapper {
+#song-display-wrapper {
 	float: right;
 	max-width: 67%;
 	max-height: 50%;
 	background-color: #FEFAC0;
 }
 
-#main-display {
+#song-display {
 	color: #785616;
+	margin: 0 auto;
 }
