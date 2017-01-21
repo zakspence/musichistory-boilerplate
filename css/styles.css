@@ -1,0 +1,94 @@
+/*------------------------------------
+				BODY
+------------------------------------*/
+
+
+
+#header, #sidebar-wrapper, #main-display-wrapper {
+	padding: 1.5em auto;
+	margin: 10px;
+	border-radius: 5px;
+	border: 2px dashed black;
+}
+
+h4 {
+	font-weight: lighter;
+	margin: 1em 0;
+}
+
+
+
+/*------------------------------------
+				HEADER
+------------------------------------*/
+
+
+
+#header {
+	background-color: #FFB4B0;
+	max-width: 100%;
+
+}
+
+#header > div {
+	margin: 15px;
+
+}
+
+.nav-box {
+	margin: 5px 0;
+}
+
+.nav-link {
+	text-decoration: none;
+}
+
+
+
+
+/*------------------------------------
+				SIDEBAR
+------------------------------------*/
+
+
+
+#sidebar-wrapper {
+	float: left;
+	max-width: 33%;
+	background-color: #4DD7FA;
+}
+
+#sidebar {
+	margin: 1em;
+}
+
+#sidebar > div {
+}
+
+#filter-submit {
+	margin: 6px auto;
+}
+
+#filter-submit input {
+	margin: auto;
+}
+
+
+
+
+/*------------------------------------
+				SIDEBAR
+------------------------------------*/
+
+
+
+#main-display-wrapper {
+	float: right;
+	max-width: 67%;
+	max-height: 50%;
+	background-color: #FEFAC0;
+}
+
+#main-display {
+	color: #785616;
+}

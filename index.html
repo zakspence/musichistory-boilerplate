@@ -4,10 +4,93 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+	<!-- main wrapper -->
+	<div id="wrapper">
+
+		<!-- header -->
+		<header id="header" class="flex">
+			<div>
+				<nav class="nav-box">
+					<span><a href="#" class="nav-link" id="view-music">View Music <b>|</b> </a></span>
+					<span><a href="#" class="nav-link" id="add-music">Add Music <b>|</b> </a></span>
+					<span><a href="#" class="nav-link" id="profile">Profile <b>|</b> </a></span>
+				</nav>
+			</div>
+		</header><!-- /header -->
+
+		<!-- sidebar -->
+		<div id="sidebar-wrapper" class="left-justify flex" name="filters">
+			<div id="sidebar">
+				<div id="length-select">
+					<h4>Song length:</h4>
+					<input type="range" id="length-slider">
+				</div>
+				<div id="artist-select">
+					<h4>Artist:</h4>
+					<select id="artist-option">
+						<option value="death-grips">Death Grips</option>
+						<option value="grimes">Grimes</option>
+						<option value="run-the-jewels">Run the Jewels</option>
+						<option value="danny-brown">Danny Brown</option>
+						<option value="vince-staples">Vince Staples</option>
+						<option value="gaslamp-killer">Gaslamp Killer</option>
+						<option value="schoolboy-q">Schoolboy Q</option>
+						<option value="anderson-paak">Anderson Paak</option>
+						<option value="kendrick-lamaar">Kendrick Lamaar</option>
+						<option value="tune-yards">Tune-Yards</option>
+ 					</select>
+				</div>
+				<div id="album-select">
+					<h4>Album:</h4>
+					<select id="album-option"></select>
+						<option value="the-money-store">The Money Store</option>
+						<option value="goverment-plates">Goverment Plates</option>
+						<option value="halfaxa">Halfaxa</option>
+						<option value="visions">Visions</option>
+						<option value="run-the-jewels">Run the Jewels</option>
+						<option value="run-the-jewels-2">Run the Jewels 2</option>
+						<option value="run-the-jewels-3">Run the Jewels 3</option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+				</div>
+				<div id="genre-select">
+					<h4>Genre:</h4>
+					<input type="checkbox" value="rock">Rock
+					<input type="checkbox" value="classical">Classical<br>
+					<input type="checkbox" value="pop">Pop
+					<input type="checkbox" value="jazz">Jazz<br>
+					<input type="checkbox" value="blues">Blues
+					<input type="checkbox" value="hip-hop">Hip Hop<br>
+				</div>
+				<div id="filter-submit">
+					<input type="submit" value="Filter">
+				</div>
+			</div>
+		</div><!-- sidebar -->
 
 
+		<div id="main-display-wrapper" class="right-justify">
+			<div id="main-display">
+
+			</div>
+
+		</div>
+
+	</div><!-- main wrapper -->
 </body>
 </html>
