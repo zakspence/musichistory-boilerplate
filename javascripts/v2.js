@@ -16,13 +16,19 @@ songs.unshift("Downward Spiral by Danny Brown on the album Atrocity Exhibition*"
 		filterNonAlphaNumeric ()
 		{
 		    var	length = songs.length;
+		    var filteredSong = [];
 
 			for(var i = 0; i < length; i++)
 			{
+				console.log(songs[i].match(/\u003E/));
+				if ( songs[i].match(/\u003E/) )
+				{
+					songs[i] = songs[i].replace(/\u003E/g, '-');
+					console.log(songs[i]);
+				}
 				var letters = songs[i].split('');
-				console.log(letters);
-				var filteredSong = letters.map( (letter) => {
-					return letter.match(/[a-z0-9\s]/i);
+				filteredSong = letters.map( (currentLetter) => {
+					return currentLetter.match(/[a-z0-9\s\u002D]/i);
 				});
 				filteredSong = filteredSong.join('');
 				songs[i] = filteredSong;
@@ -32,6 +38,12 @@ songs.unshift("Downward Spiral by Danny Brown on the album Atrocity Exhibition*"
 		getSongs ()
 		{
 			return songs;
+		},
+
+		printSongsToDom ()
+		{
+			var songCard =
+			$('#song-display').
 		}
 	};
 };
