@@ -1,4 +1,4 @@
-
+"use strict";
 // Loop over the array and remove any words or characters that obviously don't belong.
 // Students must find and replace the > character in each item with a - character.
 // Must add each string to the DOM in index.html in the main content area.
@@ -35,7 +35,7 @@ const notAChar = (char) => {
 console.log('i\'m here');
 // var notUndefined = true;
 // while(notUndefined){
-	for(var i = 0; i < songs.length; i++)
+	for(var i = 0; i < 1; i++)
 	{
 		let allChars = songs[i].split('');
 
