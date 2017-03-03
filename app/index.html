@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Music History</title>
+	  <link rel="stylesheet" href="css/styles.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!-- main wrapper -->
+		<div id="wrapper">
+
+		<!-- header -->
+		<header id="header" class="flex">
+			<div>
+				<nav class="nav-box">
+					<span><a href="#" class="nav-link" id="list-music-toggle">List Music <b>|</b> </a></span>
+					<span><a href="#" class="nav-link" id="add-music-toggle">Add Music <b>|</b> </a></span>
+					<span><a href="#" class="nav-link" id="profile-toggle">Profile <b>|</b> </a></span>
+				</nav>
+			</div>
+		</header><!-- /header -->
+
+		<!-- add music view-->
+		<div id="add-music-view" class="hidden">
+			<div id="add-music" >
+				Artist<input type="text" name="song-parts" value="">
+				Album<input type="text" name="song-parts" value="">
+				Song<input type="text" name="song-parts" value=""><br>
+				<button id="add-button">Add</button>
+			</div>
+		</div>
+		<!-- /add music -->
+
+		<!-- list music view -->
+		<div id="list-music-view">
+			<!-- sidebar -->
+			<div id="sidebar-wrapper" class="left-justify flex" name="filters">
+				<div id="sidebar">
+					<div id="length-select">
+						<h4>Song length:</h4>
+						<input type="range" id="length-slider">
+					</div>
+					<div id="artist-select">
+						<h4>Artist:</h4>
+						<select id="artist-option">
+
+	 					</select>
+					</div>
+					<div id="album-select">
+						<h4>Album:</h4>
+						<select id="album-option">
+
+						</select>
+					</div>
+					<div id="genre-select">
+						<h4>Genre:</h4>
+						<input type="checkbox" value="rock">Rock
+						<input type="checkbox" value="classical">Classical<br>
+						<input type="checkbox" value="pop">Pop
+						<input type="checkbox" value="jazz">Jazz<br>
+						<input type="checkbox" value="blues">Blues
+						<input type="checkbox" value="hip-hop">Hip Hop<br>
+					</div>
+					<div id="filter-submit">
+						<input type="submit" value="Filter">
+					</div>
+				</div>
+			</div><!-- sidebar -->
+
+			<!-- song information display -->
+			<div id="song-display-wrapper" class="right-justify">
+				<div id="song-display">
+
+				</div><!-- song information display -->
+			</div>
+		</div><!-- main wrapper -->
+		<script src="scripts/filterSongs.js"></script>
+		<script src="scripts/eventListeners.js"></script>
+
+
+	</body>
+</html>

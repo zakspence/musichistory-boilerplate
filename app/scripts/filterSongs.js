@@ -1,6 +1,6 @@
 "use strict";
 
-var filter = function filter()
+var filter = (function ()
 {
 	var songs = [];
 	songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator*";
@@ -20,11 +20,9 @@ songs.unshift("Downward Spiral by Danny Brown on the album Atrocity Exhibition*"
 
 			for(var i = 0; i < length; i++)
 			{
-				console.log(songs[i].match(/\u003E/));
 				if ( songs[i].match(/\u003E/) )
 				{
 					songs[i] = songs[i].replace(/\u003E/g, '-');
-					console.log(songs[i]);
 				}
 				var letters = songs[i].split('');
 				filteredSong = letters.map( (currentLetter) => {
@@ -40,12 +38,23 @@ songs.unshift("Downward Spiral by Danny Brown on the album Atrocity Exhibition*"
 			return songs;
 		},
 
-		printSongsToDom ()
+		addSong (song)
 		{
-			var songCard =
-			$('#song-display').
-		}
-	};
-};
+			songs.push(song);
+			this.filterNonAlphaNumeric();
+		},
 
-var songs = filter();
+		printSongs ()
+		{
+			for(var i = 0; i < songs.length; i++)
+			{
+				var songCard = `<li id="song-${i}">
+									${songs[i]}
+								</li>`
+				$('#song-display').append(songCard);
+			}
+		},
+
+	};
+})();
+
